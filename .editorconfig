@@ -1,0 +1,33 @@
+root = true
+
+[*]
+charset = utf-8
+end_of_line = lf
+insert_final_newline = true
+trim_trailing_whitespace = true
+
+[*.{cs,csx}]
+indent_style = tab
+indent_size = tab
+tab_width = 4
+csharp_new_line_before_open_brace = all
+
+[src/Nephron/**/*.cs]
+dotnet_diagnostic.CA1707.severity = error
+
+dotnet_naming_rule.public_api_pascal_case.symbols = public_api
+dotnet_naming_rule.public_api_pascal_case.style = pascal_case
+dotnet_naming_rule.public_api_pascal_case.severity = error
+
+dotnet_naming_rule.parameters_camel_case.symbols = parameters
+dotnet_naming_rule.parameters_camel_case.style = camel_case
+dotnet_naming_rule.parameters_camel_case.severity = error
+
+dotnet_naming_symbols.public_api.applicable_kinds = namespace, class, struct, interface, enum, delegate, property, method, event, field
+dotnet_naming_symbols.public_api.applicable_accessibilities = public, protected, protected_internal
+
+dotnet_naming_symbols.parameters.applicable_kinds = parameter
+dotnet_naming_symbols.parameters.applicable_accessibilities = *
+
+dotnet_naming_style.pascal_case.capitalization = pascal_case
+dotnet_naming_style.camel_case.capitalization = camel_case

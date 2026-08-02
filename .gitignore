@@ -1,0 +1,43 @@
+# Build
+bin/
+obj/
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+
+# IDE
+.vs/
+.idea/
+*.user
+*.userosscache
+*.suo
+*.cache
+
+# NuGet
+*.nupkg
+*.snupkg
+packages/
+/artifacts/
+
+# Test results
+TestResults/
+*.trx
+*.coverage
+
+# Local hostile-corpus evaluation workspace. The harness is tracked so the published
+# numbers can be reproduced; the corpora, manifests, scan outputs, and venv are not --
+# they are hostile data, hundreds of MB, and not ours to redistribute.
+.eval/*
+!.eval/scripts/
+!.eval/README.md
+!.eval/requirements.txt
+.eval/scripts/__pycache__/
+
+# Python
+__pycache__/
+*.pyc
+
+# OS
+.DS_Store
+Thumbs.db

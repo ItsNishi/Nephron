@@ -1,0 +1,39 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net10.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<RootNamespace>Nephron</RootNamespace>
+		<IsAotCompatible>true</IsAotCompatible>
+		<TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+		<NoWarn>$(NoWarn);CS1591</NoWarn>
+	</PropertyGroup>
+
+	<PropertyGroup>
+		<PackageId>Nephron</PackageId>
+		<Version>2.1.0</Version>
+		<Authors>Nishi</Authors>
+		<Description>Deterministic LLM input/output guardrail library for .NET. Normalizes away encoding tricks, then scans user input, model output, and tool/RAG results for prompt injection, jailbreak markers, role smuggling, Unicode steganography, and exfiltration beacons. Zero dependencies, AOT-compatible, allocation-free on the clean path.</Description>
+		<PackageTags>llm;security;prompt-injection;jailbreak;guardrail;ai-safety;aot</PackageTags>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+		<RepositoryUrl>https://github.com/ItsNishi/Nephron</RepositoryUrl>
+		<RepositoryType>git</RepositoryType>
+		<PackageProjectUrl>https://github.com/ItsNishi/Nephron</PackageProjectUrl>
+		<PublishRepositoryUrl>true</PublishRepositoryUrl>
+		<IncludeSymbols>true</IncludeSymbols>
+		<SymbolPackageFormat>snupkg</SymbolPackageFormat>
+		<GenerateDocumentationFile>true</GenerateDocumentationFile>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<InternalsVisibleTo Include="Nephron.Tests" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Include="../../README.md" Pack="true" PackagePath="/" />
+		<None Include="../../LICENSE" Pack="true" PackagePath="/" />
+	</ItemGroup>
+
+</Project>

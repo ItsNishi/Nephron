@@ -1,0 +1,9 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/Nephron.Demo/Nephron.Demo.csproj" />
+    <Project Path="src/Nephron/Nephron.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/Nephron.Tests/Nephron.Tests.csproj" />
+  </Folder>
+</Solution>
