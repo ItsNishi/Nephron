@@ -14,6 +14,7 @@ project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ### Changed
 
+- Improved the repository title, status badges, and package search metadata for discoverability.
 - Pinned test dependencies, evaluation dataset revisions, and CI actions for reproducible builds
   and evaluation runs.
 - Canary commands now validate each fixture's expected verdict, including clean and flag-only

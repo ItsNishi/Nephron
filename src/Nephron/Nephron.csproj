@@ -12,10 +12,14 @@
 
 	<PropertyGroup>
 		<PackageId>Nephron</PackageId>
+		<Title>Nephron — Deterministic LLM Security Guardrails for .NET</Title>
 		<Version>2.1.0</Version>
 		<Authors>Nishi</Authors>
 		<Description>Deterministic LLM input/output guardrail library for .NET. Normalizes away encoding tricks, then scans user input, model output, and tool/RAG results for prompt injection, jailbreak markers, role smuggling, Unicode steganography, and exfiltration beacons. Zero dependencies, AOT-compatible, allocation-free on the clean path.</Description>
-		<PackageTags>llm;security;prompt-injection;jailbreak;guardrail;ai-safety;aot</PackageTags>
+		<PackageTags>
+			dotnet;csharp;llm;llm-security;ai-security;prompt-injection;prompt-injection-detection;jailbreak;
+			guardrail;ai-agents;rag-security;mcp-security;native-aot
+		</PackageTags>
 		<PackageLicenseExpression>MIT</PackageLicenseExpression>
 		<PackageReadmeFile>README.md</PackageReadmeFile>
 		<RepositoryUrl>https://github.com/ItsNishi/Nephron</RepositoryUrl>

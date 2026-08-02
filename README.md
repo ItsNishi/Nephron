@@ -1,4 +1,9 @@
-# 🧬 Nephron
+# 🧬 Nephron — deterministic .NET LLM security guardrails
+
+[![CI][ci-badge]][ci-workflow]
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![.NET 10](https://img.shields.io/badge/.NET-10-512BD4.svg)](https://dotnet.microsoft.com/)
+[![Native AOT](https://img.shields.io/badge/Native%20AOT-compatible-2ea44f.svg)](docs/Architecture.md)
 
 > Deterministic LLM input/output guardrail library for .NET. Layered detection traps malicious content before it reaches your model, and inspects model output and tool/RAG results for exfiltration markers before they reach your agent.
 
@@ -278,3 +283,6 @@ Report vulnerabilities privately as described in [SECURITY.md](SECURITY.md).
 ## 📄 License
 
 MIT — see [LICENSE](LICENSE).
+
+[ci-badge]: https://github.com/ItsNishi/Nephron/actions/workflows/ci.yml/badge.svg
+[ci-workflow]: https://github.com/ItsNishi/Nephron/actions/workflows/ci.yml
